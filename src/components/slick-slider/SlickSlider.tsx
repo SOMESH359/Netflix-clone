@@ -149,7 +149,7 @@ export default function SlickSlider({ data, genre }: SlickSliderProps) {
             <NetflixNavigationLink
               variant="h5"
               to={`/genre/${
-                genre.id || genre.name.toLowerCase().replace(" ", "_")
+                genre.id ?? genre.name.toLowerCase().replace(" ", "_")
               }`}
               sx={{
                 display: "inline-block",
