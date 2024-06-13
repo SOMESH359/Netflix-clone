@@ -103,7 +103,7 @@ export function Component() {
     navigate("/browse");
   };
 
-  if (!!videoJsOptions.width) {
+  if (!videoJsOptions.width) {
     return (
       <Box
         sx={{
